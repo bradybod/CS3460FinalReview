@@ -48,11 +48,14 @@ public:
     iterator() :
         m_pos(0),
         m_data(nullptr) {}
+
     iterator(const iterator& obj);
+
     iterator(T* m_data) :
         m_data(m_data),
         m_pos(0) {}
-    iterator(size_type pos, T* m_data) :
+
+    iterator(size_type m_pos, T* m_data) :
         m_pos(m_pos),
         m_data(m_data) {}
 
