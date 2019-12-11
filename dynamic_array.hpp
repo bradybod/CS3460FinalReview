@@ -38,7 +38,7 @@ public:
   void push_back(T val);
 
   ///
-  ///Nested Iterator
+  ///Nested Iterator Class
   ///
 
   class iterator
