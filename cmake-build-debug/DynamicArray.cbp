@@ -80,6 +80,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/bradybodily/Repositories/CS3460FinalReview/DynamicArray/dynamic_array.hpp">
+			<Option target="DynamicArray"/>
+		</Unit>
 		<Unit filename="/Users/bradybodily/Repositories/CS3460FinalReview/DynamicArray/main.cpp">
 			<Option target="DynamicArray"/>
 		</Unit>

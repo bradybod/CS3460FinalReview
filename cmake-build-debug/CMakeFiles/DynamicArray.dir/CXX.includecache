@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/bradybodily/Repositories/CS3460FinalReview/DynamicArray/dynamic_array.hpp
+stdexcept
+-
+initializer_list
+-
+iterator
+-
+
+/Users/bradybodily/Repositories/CS3460FinalReview/DynamicArray/main.cpp
+iostream
+-
+dynamic_array.hpp
+/Users/bradybodily/Repositories/CS3460FinalReview/DynamicArray/dynamic_array.hpp
+
