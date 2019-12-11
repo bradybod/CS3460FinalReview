@@ -36,6 +36,7 @@ public:
   ///Functions
   ///
   void push_back(T val);
+  uint64_t size(){return _current_size;}
 
   ///
   ///Nested Iterator Class
@@ -134,12 +135,11 @@ bool dynamic_array<T, Size>::operator==(const dynamic_array rhs){
 template <typename T, uint64_t Size>
 void dynamic_array<T, Size>::push_back(T val) {
   if(_current_size == _array_size){
-    T* new_array = new T[_array_size * 2];
-    for(uint64_t i = 0; i < _current_size; i++){
-      new_array[i] = _data[i];
-    }
-    delete [] _data;
-    _data = new_array;
+    T* newArr = new int[_current_size * 2];
+    memcpy( newArr, _data, _current_size * sizeof(int) );
+    _data = newArr;
+    _array_size = _array_size*2;
+
     this->push_back(val);
   }else{
     _data[_current_size++] = val;
